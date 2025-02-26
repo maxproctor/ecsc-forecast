@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  station_id: MyString
+  timestamp: 2025-02-26 15:52:47
+  latitude: 1.5
+  longitude: 1.5
+  depth: 1.5
+  significant_wave_height: 1.5
+  max_wave_height: 1.5
+  dominant_wave_period: 1.5
+  wind_direction: 1.5
+  wind_speed: 1.5
+  air_pressure: 1.5
+  air_temperature: 1.5
+  sea_surface_temperature: 1.5
+
+two:
+  station_id: MyString
+  timestamp: 2025-02-26 15:52:47
+  latitude: 1.5
+  longitude: 1.5
+  depth: 1.5
+  significant_wave_height: 1.5
+  max_wave_height: 1.5
+  dominant_wave_period: 1.5
+  wind_direction: 1.5
+  wind_speed: 1.5
+  air_pressure: 1.5
+  air_temperature: 1.5
+  sea_surface_temperature: 1.5

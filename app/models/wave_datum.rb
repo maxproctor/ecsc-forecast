@@ -1,0 +1,2 @@
+class WaveDatum < ApplicationRecord
+end
