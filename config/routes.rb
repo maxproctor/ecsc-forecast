@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
-  
-  # Ensure Devise routes are correctly mapped
+  devise_for :users, skip: [:registrations]  # Disable user sign-up
+
   devise_scope :user do
-    root to: "devise/sessions#new"  # Make the login page the homepage
+    root to: "devise/sessions#new"  # Login page as homepage
   end
 
   # Health check route
