@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_02_26_224432) do
+ActiveRecord::Schema[7.2].define(version: 2025_02_26_235247) do
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -21,5 +21,23 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_26_224432) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "wave_data", force: :cascade do |t|
+    t.string "station_id"
+    t.datetime "timestamp"
+    t.float "latitude"
+    t.float "longitude"
+    t.float "depth"
+    t.float "significant_wave_height"
+    t.float "max_wave_height"
+    t.float "dominant_wave_period"
+    t.float "wind_direction"
+    t.float "wind_speed"
+    t.float "air_pressure"
+    t.float "air_temperature"
+    t.float "sea_surface_temperature"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 end
